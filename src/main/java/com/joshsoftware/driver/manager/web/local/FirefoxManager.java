@@ -1,11 +1,11 @@
-package com.joshsoftware.driver.manager;
+package com.joshsoftware.driver.manager.web.local;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class FirefoxManager {
+public final class FirefoxManager {
 
 	private FirefoxManager() {}
 	

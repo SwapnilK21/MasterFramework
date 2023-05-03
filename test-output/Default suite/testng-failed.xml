@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.joshsoftware.tests.firstTest">
+      <class name="com.joshsoftware.driver.Driver">
         <methods>
-          <include name="testLogin"/>
+          <include name="initDriver"/>
         </methods>
-      </class> <!-- com.joshsoftware.tests.firstTest -->
+      </class> <!-- com.joshsoftware.driver.Driver -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

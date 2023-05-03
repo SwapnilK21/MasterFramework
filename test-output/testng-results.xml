@@ -1,17 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-28T17:46:51 IST" name="Default suite" finished-at="2023-03-28T17:46:51 IST" duration-ms="123">
+  <suite started-at="2023-04-24T12:44:04 IST" name="Default suite" finished-at="2023-04-24T12:44:05 IST" duration-ms="174">
     <groups>
     </groups>
-    <test started-at="2023-03-28T17:46:51 IST" name="Default test" finished-at="2023-03-28T17:46:51 IST" duration-ms="123">
-      <class name="com.joshsoftware.tests.firstTest">
-        <test-method signature="testLogin()[pri:0, instance:com.joshsoftware.tests.firstTest@49049a04]" started-at="2023-03-28T17:46:51 IST" name="testLogin" finished-at="2023-03-28T17:46:51 IST" duration-ms="68" status="PASS">
+    <test started-at="2023-04-24T12:44:04 IST" name="Default test" finished-at="2023-04-24T12:44:05 IST" duration-ms="174">
+      <class name="com.joshsoftware.driver.Driver">
+        <test-method signature="initDriver()[pri:0, instance:com.joshsoftware.driver.Driver@291ae]" started-at="2023-04-24T12:44:04 IST" name="initDriver" finished-at="2023-04-24T12:44:05 IST" duration-ms="124" status="FAIL">
+          <exception class="java.lang.UnsupportedOperationException">
+            <message>
+              <![CDATA[Cannot convert 'selenoid' to com.joshsoftware.enums.BrowserRemoteModeType]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.UnsupportedOperationException: Cannot convert 'selenoid' to com.joshsoftware.enums.BrowserRemoteModeType
+at org.aeonbits.owner.util.Util.unsupported(Util.java:139)
+at org.aeonbits.owner.Converters.unsupportedConversion(Converters.java:294)
+at org.aeonbits.owner.Converters.access$400(Converters.java:38)
+at org.aeonbits.owner.Converters$5.tryConvert(Converters.java:161)
+at org.aeonbits.owner.Converters.doConvert(Converters.java:285)
+at org.aeonbits.owner.Converters.convert(Converters.java:280)
+at org.aeonbits.owner.PropertiesInvocationHandler.resolveProperty(PropertiesInvocationHandler.java:89)
+at org.aeonbits.owner.PropertiesInvocationHandler.invoke(PropertiesInvocationHandler.java:67)
+at com.sun.proxy.$Proxy13.browserRemoteMode(Unknown Source)
+at com.joshsoftware.driver.Driver.initDriver(Driver.java:20)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.IllegalArgumentException: No enum constant com.joshsoftware.enums.BrowserRemoteModeType.selenoid
+at java.base/java.lang.Enum.valueOf(Enum.java:240)
+at java.desktop/com.sun.beans.editors.EnumEditor.setAsText(EnumEditor.java:104)
+at org.aeonbits.owner.Converters$5.tryConvert(Converters.java:158)
+... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.UnsupportedOperationException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogin -->
-      </class> <!-- com.joshsoftware.tests.firstTest -->
+        </test-method> <!-- initDriver -->
+      </class> <!-- com.joshsoftware.driver.Driver -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
